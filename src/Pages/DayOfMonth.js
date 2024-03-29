@@ -7,11 +7,11 @@ function DayOfMonth() {
 
     // tính số ngày
     useEffect(() => {
-        const DayofMonths = () => {
+        const getNumberOfDayInMonths = () => {
             const days = new Date(year, month, 0).getDate()
             setDaysInMonth(days)
         }
-        DayofMonths()
+        getNumberOfDayInMonths()
     }, [year, month])
     // giới hạn 12 tháng
     const handleClickMonths = (e) => {
